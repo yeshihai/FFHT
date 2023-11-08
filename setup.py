@@ -27,7 +27,7 @@ module = Extension('ffht',
                    include_dirs=[np.get_include()] + ["pybind11/include"])
 
 setup(name='FFHT',
-      version='1.1',
+      version='1.2',
       author='Ilya Razenshteyn, Ludwig Schmidt',
       author_email='falconn.lib@gmail.com',
       url='https://github.com/FALCONN-LIB/FFHT',
