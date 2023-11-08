@@ -176,4 +176,5 @@ PYBIND11_MODULE(ffht, m) {
     m.doc() = module_docstring;
     m.def("fht", npfht, py::arg("input"), py::arg("nthreads") = 1, fht_docstring);
     m.def("fht_", npfht_, py::arg("input"), py::arg("nthreads") = 1, "In-place version of ffht.fht. See ffht.fht documentation for details");
+    m.def("bfht_", nnpfht_, py::arg("input"), py::arg("imp") = 1, py::arg("nthreads") = 1, "In-place version of ffht.fht. See ffht.fht documentation for details");
 }
